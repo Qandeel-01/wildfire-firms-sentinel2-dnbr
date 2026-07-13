@@ -1,4 +1,4 @@
-# Wildfire Detection and Burn Severity Mapping — FIRMS + Sentinel-2 dNBR
+# Wildfire Detection and Burn Severity Mapping FIRMS + Sentinel-2 dNBR
 
 A Jupyter notebook that combines NASA FIRMS real-time active fire data with Sentinel-2 satellite imagery to detect wildfires, track fire spread, and map burn severity using the Differenced Normalized Burn Ratio (dNBR).
 
