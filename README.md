@@ -43,6 +43,22 @@ A Jupyter notebook that combines NASA FIRMS real-time active fire data with Sent
 
 ## Results — Dixie Fire (2021)
 
+### Fire Activity Over Time — Daily Detections by Satellite
+
+![Daily Detections](images/02_daily_detections.png)
+
+> Daily fire detection counts per satellite (N20 = VIIRS NOAA-20, N21 = VIIRS NOAA-21, N = VIIRS S-NPP, Terra = MODIS). The sharp rise in detections toward the end of the observation window indicates accelerating fire activity in the Canada Boreal region. NOAA-20 and NOAA-21 dominate the detection count due to their higher sensitivity.
+
+---
+
+### dNBR Distribution — Severity Thresholds
+
+![dNBR Distribution](images/07_dnbr_distribution.png)
+
+> Histogram of dNBR pixel values across the entire Dixie Fire study area. The dashed black line marks the Unburned/Low threshold (0.10); red dashed lines mark the Low/Mod-Low (0.27), Mod-Low/Mod-High (0.44), and Mod-High/High (0.66) thresholds. The bimodal shape — a dense peak near 0 (unburned/pre-fire vegetation) and a broad shoulder extending past 0.66 — confirms that a large fraction of the landscape sustained moderate-to-high severity burning.
+
+---
+
 ### Before vs After — Sentinel-2 True Colour
 
 ![Before and After](images/05_before_after_comparison.png)
@@ -105,6 +121,8 @@ BBOX = REGIONS["canada_boreal"]  # change here
 ├── wildfire-firms.ipynb             # Full analysis notebook
 ├── README.md
 └── images/
+    ├── 02_daily_detections.png
     ├── 05_before_after_comparison.png
+    ├── 07_dnbr_distribution.png
     └── 11_cartographic_severity_map.png
 ```
