@@ -1,4 +1,4 @@
-# Wildfire Detection and Burn Severity Mapping FIRMS + Sentinel-2 dNBR
+# Wildfire Detection and Burn Severity Mapping — FIRMS + Sentinel-2 dNBR
 
 A Jupyter notebook that combines NASA FIRMS real-time active fire data with Sentinel-2 satellite imagery to detect wildfires, track fire spread, and map burn severity using the Differenced Normalized Burn Ratio (dNBR).
 
@@ -47,7 +47,7 @@ A Jupyter notebook that combines NASA FIRMS real-time active fire data with Sent
 
 ![Daily Detections](images/02_daily_detections.png)
 
-> Daily fire detection counts per satellite (N20 = VIIRS NOAA-20, N21 = VIIRS NOAA-21, N = VIIRS S-NPP, Terra = MODIS). The sharp rise in detections toward the end of the observation window indicates accelerating fire activity in the Canada Boreal region. NOAA-20 and NOAA-21 dominate the detection count due to their higher sensitivity.
+> Daily fire detection counts per satellite (N20 = VIIRS NOAA-20, N21 = VIIRS NOAA-21, N = VIIRS S-NPP, Terra = MODIS). The sharp rise in detections toward the end of the observation window reflects accelerating fire growth during the Dixie Fire's peak spread. NOAA-20 and NOAA-21 dominate the detection count due to their higher sensitivity.
 
 ---
 
@@ -109,7 +109,7 @@ REGIONS = {
     "greece_med":    [  20, 37,  28,  41],
     "australia_se":  [ 145,-38, 152, -32],
 }
-BBOX = REGIONS["canada_boreal"]  # change here
+BBOX = REGIONS["west_us"]  # Dixie Fire case study; change to any region above
 ```
 
 ---
